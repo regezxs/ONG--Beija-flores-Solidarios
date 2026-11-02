@@ -1,0 +1,7 @@
+# Ilustrações de exploração visual que não são usadas nas páginas.
+/img/ilustracao-*.png
+
+# Arquivos temporários do sistema e pacotes de entrega locais.
+Thumbs.db
+.DS_Store
+*.zip
