@@ -11,6 +11,7 @@
   --papel: #fffdf5;
 }
 * { box-sizing: border-box; }
+
 /* Permite quebrar textos longos sem esconder conteúdo fora da tela. */
 body { overflow-wrap: anywhere; }
 body { margin: 0; background: var(--fundo); color: var(--texto); font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
@@ -22,6 +23,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 3px solid #936700; outline-offset: 5px; }
 [hidden] { display: none !important; }
 .container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+
 /* Filhos de Grid e Flexbox podem encolher junto com a tela. */
 .hero > *, .pilares > *, .duas-colunas > *, .projeto > *,
 .contato-layout > *, .convite > *, .rodape-principal > * { min-width: 0; }
@@ -29,6 +31,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .pular:focus { top: 10px; }
 .aviso-topo { margin: 0; padding: 7px 5%; text-align: center; background: var(--verde-claro); font-size: .75rem; color: var(--verde); }
 /* Flexbox mantém o cabeçalho e o menu alinhados. */
+
 .cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 100px; }
 .marca img { width: 133px; }
 .menu { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
@@ -50,6 +53,7 @@ p { margin-bottom: 20px; }
 .botao-secundario { background: transparent; color: var(--verde); }
 .acoes { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
 .link-seta { display: inline-block; padding-block: 10px; font-weight: bold; font-size: .9rem; }
+
 /* 2. Início: composição com texto e fotografia, sem carrossel. */
 .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 55px; padding-block: 36px 60px; }
 .hero h1 span { color: var(--verde); }
@@ -70,6 +74,7 @@ figcaption { font-size: .7rem; color: var(--cinza); margin-top: 10px; }
 .convite h2 { font-size: 2.1rem; max-width: 500px; margin-bottom: 12px; }
 .convite p { margin-bottom: 0; max-width: 55ch; color: var(--cinza); }
 .convite .botao { flex-shrink: 0; }
+
 /* 3. Páginas internas. */
 .pagina-titulo { border-top: 1px solid var(--linha); padding-block: 45px 35px; }
 .pagina-titulo h1 { max-width: 850px; }
@@ -94,6 +99,7 @@ figcaption { font-size: .7rem; color: var(--cinza); margin-top: 10px; }
 #orientacoes li { margin-bottom: 12px; }
 .lista-cursos { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
 .lista-cursos li { padding: 8px 14px; background: var(--verde-claro); border-radius: 4px; font-size: .9rem; }
+
 /* 4. Contato e mensagens de validação. */
 .contato-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; padding-bottom: 75px; }
 .contato-info h2 { font-size: 1.6rem; }
@@ -104,6 +110,7 @@ figcaption { font-size: .7rem; color: var(--cinza); margin-top: 10px; }
 .formulario h2 { font-size: 1.8rem; }
 .campo { margin-bottom: 20px; }
 label { display: block; margin-bottom: 7px; font-weight: bold; font-size: .85rem; }
+
 /* 16 px nos campos evita o zoom automático de foco em celulares iOS. */
 input, select, textarea { display: block; width: 100%; min-width: 0; max-width: 100%; min-height: 48px; font-size: 1rem; padding: 12px; border: 1px solid #879a80; border-radius: 4px; color: var(--texto); background: #fff; }
 textarea { min-height: 145px; resize: vertical; }
@@ -112,6 +119,7 @@ textarea { min-height: 145px; resize: vertical; }
 .mensagem:empty { display: none; }
 .erro { color: #832620; background: #fff0ed; border: 1px solid #b7473d; }
 .sucesso { color: #155109; background: var(--verde-claro); border: 1px solid var(--verde); }
+
 /* 5. Rodapé e adaptação para celular. */
 .rodape { padding-block: 45px 22px; border-top: 1px solid var(--linha); }
 .rodape-principal { display: flex; justify-content: space-between; gap: 40px; margin-bottom: 35px; }
@@ -120,6 +128,7 @@ textarea { min-height: 145px; resize: vertical; }
 .rodape p { color: var(--cinza); max-width: 42ch; }
 .rodape-links { display: flex; flex-direction: column; gap: 8px; }
 .rodape-base { padding-top: 20px; border-top: 1px solid var(--linha); font-size: .75rem; color: var(--cinza); }
+
 /* Tablet: reduz espaços antes que as colunas fiquem apertadas. */
 @media (max-width: 1024px) {
   .hero, .duas-colunas, .projeto { gap: 30px; }
@@ -134,6 +143,7 @@ textarea { min-height: 145px; resize: vertical; }
   .rodape-principal { flex-wrap: wrap; gap: 25px; }
   .rodape-principal > div { flex: 1 1 220px; }
 }
+
 /* Tablet menor: texto e imagem passam a ocupar linhas próprias. */
 @media (max-width: 850px) {
   .hero, .duas-colunas, .projeto { grid-template-columns: 1fr; }
@@ -165,6 +175,7 @@ textarea { min-height: 145px; resize: vertical; }
   .contato-layout { padding-bottom: 45px; }
   .rodape-principal > div { flex: auto; }
 }
+
 /* Celulares estreitos: menu em duas colunas e botões com largura disponível. */
 @media (max-width: 420px) {
   .container { width: calc(100% - 32px); }
@@ -273,6 +284,7 @@ textarea { min-height: 145px; resize: vertical; }
 .pilar > img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--verde-claro); border-radius: 6px; margin-bottom: 22px; }
 .rodape-simples { text-align: center; padding-block: 28px; }
 .rodape-simples strong { margin: 0; }
+
 /* Ilustrações conceituais: manter a composição inteira visível. */
 .caminhos img.imagem-institucional, .pilar > img.imagem-institucional {
   aspect-ratio: 4 / 3;
@@ -350,6 +362,7 @@ textarea { min-height: 145px; resize: vertical; }
 .pilar > img { margin-bottom: 18px; }
 .pilar .numero { margin-bottom: 14px; }
 .ninho-resumo { grid-template-columns: .9fr 1.1fr; gap: 38px; }
+
 /* Duas imagens mais largas, deslocadas sem deixar um grande vazio embaixo. */
 .foto-dupla { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
 .foto-dupla figure:first-child { grid-column: 1 / 5; }
@@ -359,6 +372,7 @@ textarea { min-height: 145px; resize: vertical; }
 .caminhos a { gap: 12px; padding-top: 0; border-top: 0; }
 .caminhos img { margin-bottom: 4px; }
 .caminhos a > span:last-child { margin-top: auto; }
+
 /* Cartazes mantidos inteiros, em largura moderada para não dominar a leitura. */
 .arquivo-grid { gap: 35px; }
 .arquivo-grid article { display: grid; grid-template-columns: minmax(120px, .9fr) 1fr; gap: 0 22px; align-content: start; }
