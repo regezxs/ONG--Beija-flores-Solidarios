@@ -1,11 +1,5 @@
 # Site institucional - Beija-Flores Solidários
 
-Projeto integrador desenvolvido com **HTML5, CSS3 e JavaScript puro**, conforme a documentação **Projeto_ONG_V2 (1).pdf**, versão 2, de Marcelo de Freitas Pintaud.
-
-> Proposta local de site institucional, preparada para apresentação e aprovação visual da ONG. Não houve publicação nem substituição do site atual. O formulário possui envio exclusivamente simulado: não envia mensagens nem coleta ou armazena dados.
-
-A versão principal está na raiz deste repositório. A pasta `academico/` preserva uma versão anterior, identificada como protótipo acadêmico, para a apresentação ao professor. Ela possui seus próprios arquivos e README e não acompanha automaticamente as alterações da versão principal.
-
 ## 1. ONG escolhida
 
 A **Beija-Flores Solidários** atua em São Paulo no apoio a pessoas em situação de vulnerabilidade social. Segundo sua apresentação institucional, o projeto surgiu em 2007 como Noites Solidárias e passou a utilizar o nome Beija-Flores Solidários.
@@ -20,7 +14,7 @@ Fonte: [apresentação institucional da ONG](https://www.beijafloressolidarios.o
 
 Apresentar a causa, a história, o público atendido e as iniciativas da ONG por meio de um site responsivo e interativo, com navegação clara e linguagem simples. O projeto também busca orientar possíveis voluntários e apoiadores e demonstrar os conteúdos de HTML, CSS e JavaScript estudados em sala.
 
-A identidade visual utiliza os verdes **#148100** e **#176509**, encontrados no site institucional, combinados com fundo claro **#faf6ea** e detalhes em terracota **#a64b2a** para facilitar a leitura. As imagens atualmente exibidas vêm do site da ONG e das capas dos vídeos vinculados nele; nenhuma ilustração gerada por IA está em uso nos quatro HTML principais.
+A identidade visual utiliza os verdes **#148100** e **#176509**, encontrados no site institucional, combinados com fundo claro para facilitar a leitura.
 
 ## 3. Integrantes da equipe
 
@@ -41,14 +35,14 @@ Preencher os nomes e as responsabilidades conforme a participação efetiva de c
 
 | Página | Arquivo | Conteúdo |
 | --- | --- | --- |
-| Início | `index.html` | Apresentação, história em destaque, pilares, Ninho, caminhos de participação, registros históricos, capas de vídeos e chamada para participar. |
+| Início | `index.html` | Nome da ONG, causa, apresentação breve, imagem de destaque e chamadas para conhecer iniciativas e participar. |
 | Sobre | `sobre.html` | História, missão, público atendido, objetivos e origem do nome. |
-| Projetos | `projetos.html` | Três iniciativas com imagens e formas de contribuição, cursos, bazar, memória de ações, campanhas e painel de orientações. |
+| Projetos | `projetos.html` | Três iniciativas com nome, descrição, imagem e indicação de como a comunidade pode contribuir. |
 | Contato | `contato.html` | Canais institucionais, orientações de participação e formulário com nome, e-mail, assunto e mensagem, com aviso de envio simulado. |
 
 As três iniciativas apresentadas são: **Alimento e cuidado nas ruas**, **Conhecimento para novas oportunidades** e **Um Ninho de encontros e participação**. Esses títulos organizam o conteúdo pesquisado e não representam nomes oficiais de programas da ONG.
 
-As quatro páginas principais compartilham menu, identidade visual e rodapé contendo somente o nome **Beija-Flores Solidários**. A identificação acadêmica está preservada na cópia em `academico/`.
+As quatro páginas compartilham menu, identidade visual e rodapé com o nome da ONG. Os avisos acadêmicos e de envio simulado permanecem nas páginas em que estão presentes.
 
 ## 5. Duas funcionalidades JavaScript
 
@@ -90,16 +84,12 @@ ONG--Beija-flores-Solidarios/
 |-- projetos.html
 |-- contato.html
 |-- README.md
-|-- .gitignore
-|-- academico/
-|   `-- versão anterior para apresentação acadêmica, com README e recursos próprios
 |-- css/
 |   `-- estilos.css
 |-- js/
 |   `-- script.js
 `-- img/
-    |-- fontes-imagens.md
-    `-- logotipo, fotografias, cartazes, capas e materiais de referência
+    `-- somente o logotipo e as imagens utilizadas nas páginas
 ```
 
 ## 7. Como executar
@@ -115,12 +105,6 @@ Não é necessário instalar dependências, configurar banco de dados ou iniciar
 
 ## 8. Testes e revisão antes da entrega
 
-- [x] Conferir os destinos do menu, links locais, âncoras, imagens e caminhos relativos por inspeção dos arquivos.
-- [x] Conferir labels associados aos campos, textos alternativos e IDs únicos nos quatro HTML.
-- [x] Conferir a sintaxe de `js/script.js` e de `academico/js/script.js`.
-- [ ] Demonstrar a navegação real no navegador e conferir todas as páginas em **390 px** e **1280 px**, sem sobreposição ou rolagem horizontal indevida.
-- [ ] Demonstrar o painel em cliques sucessivos e testar erros, espaços e confirmação do formulário na interface real.
-- [ ] Conferir Tab, Enter/Espaço, foco visível e legibilidade no navegador.
 - [ ] Extrair o ZIP em outra pasta e verificar o funcionamento.
 
 **Verificações já realizadas:** sintaxe JavaScript, caminhos locais, estrutura semântica básica e lógica das duas interações em ambiente simulado. A revisão visual e os testes de interface no navegador real permanecem pendentes; o ambiente simulado não substitui essa conferência.
@@ -155,13 +139,7 @@ Arquivos disponibilizados no site institucional:
 | `img/historia.jpg` | [Imagem ilustrativa de aprendizado](https://www.beijafloressolidarios.org.br/assets/images/beijaflorsolidario-quem-somos-2000x1333.jpg) |
 | `img/culinaria.jpg` | [Imagem da área de culinária](https://www.beijafloressolidarios.org.br/assets/images/paniicacao-492x404.jpg) |
 | `img/esporte.jpg` | [Imagem da área de treinamento](https://www.beijafloressolidarios.org.br/assets/images/treinamento-funcional-492x532.jpg) |
-| `img/ingles.jpg` | [Imagem da área de inglês](https://www.beijafloressolidarios.org.br/assets/images/aula-de-ingles-492x258.jpg), exibida em Início e Projetos. |
-
-A tabela acima reúne os arquivos básicos. A relação completa das imagens atualmente exibidas, incluindo cartazes, materiais de colaboração, imagem de logística e capas dos dois vídeos, está em **[img/fontes-imagens.md](img/fontes-imagens.md)**.
-
-O [Instagram da ONG](https://www.instagram.com/beijafloressolidarios/) permanece como canal de contato. Suas publicações não puderam ser consultadas publicamente nesta pesquisa; nenhuma imagem é creditada a esse perfil sem verificação.
-
-Os arquivos `img/ilustracao-*.png` foram gerados em uma etapa anterior e retirados das páginas. Permanecem locais, ignorados pelo Git e dispensáveis para executar o site. Os prompts históricos permanecem documentados em `img/prompts-ilustracoes.md`.
+| `img/foto-1-482x470.jpeg` | [Beija-flor da página Quem Somos](https://www.beijafloressolidarios.org.br/assets/images/foto-1-482x470.jpeg) |
 
 Crédito de disponibilização: **site institucional Beija-Flores Solidários**. A autoria individual e a licença de reutilização das imagens não foram identificadas. Confirmar autorização antes de divulgação pública. As imagens ilustrativas não são apresentadas como registros de pessoas atendidas pela ONG.
 
