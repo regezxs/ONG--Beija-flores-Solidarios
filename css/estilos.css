@@ -287,6 +287,8 @@ textarea { min-height: 145px; resize: vertical; }
 .pilar > img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--verde-claro); border-radius: 6px; margin-bottom: 22px; }
 .rodape-simples { text-align: center; padding-block: 28px; }
 .rodape-simples strong { margin: 0; }
+.rodape-simples .container { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.rodape-logo { width: 64px; height: 64px; }
 
 /* Ilustrações conceituais: manter a composição inteira visível. */
 .caminhos img.imagem-institucional, .pilar > img.imagem-institucional {
