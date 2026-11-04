@@ -16,9 +16,8 @@ Apresentar a causa, a história, o público atendido e as iniciativas da ONG por
 
 A identidade visual utiliza os verdes **#148100** e **#176509**, encontrados no site institucional, combinados com fundo claro para facilitar a leitura.
 
-## 3. Integrantes da equipe
+## 3. Integrantes da equipe e suas responsabilidades 
 
-Preencher os nomes e as responsabilidades conforme a participação efetiva de cada integrante.
 
 | Integrante | Nome completo | Responsabilidades / contribuição |
 | --- | --- | --- |
@@ -103,13 +102,7 @@ ONG--Beija-flores-Solidarios/
 
 Não é necessário instalar dependências, configurar banco de dados ou iniciar um servidor. O uso de Live Server é opcional.
 
-## 8. Testes e revisão antes da entrega
-
-- [ ] Extrair o ZIP em outra pasta e verificar o funcionamento.
-
-**Verificações já realizadas:** sintaxe JavaScript, caminhos locais, estrutura semântica básica e lógica das duas interações em ambiente simulado. A revisão visual e os testes de interface no navegador real permanecem pendentes; o ambiente simulado não substitui essa conferência.
-
-## 9. Fontes e créditos
+## 8. Fontes e créditos
 
 ### Documentação da atividade
 
@@ -142,17 +135,3 @@ Arquivos disponibilizados no site institucional:
 | `img/foto-1-482x470.jpeg` | [Beija-flor da página Quem Somos](https://www.beijafloressolidarios.org.br/assets/images/foto-1-482x470.jpeg) |
 
 Crédito de disponibilização: **site institucional Beija-Flores Solidários**. A autoria individual e a licença de reutilização das imagens não foram identificadas. Confirmar autorização antes de divulgação pública. As imagens ilustrativas não são apresentadas como registros de pessoas atendidas pela ONG.
-
-## 10. Entrega e demonstração
-
-Conforme o PDF, a entrega deve conter um **ZIP com os quatro HTML, CSS, JavaScript, imagens, demais recursos utilizados e este README**. Não incluir a pasta `.git`. Hospedagem online é opcional e não substitui o ZIP.
-
-Na apresentação, a equipe deverá:
-
-1. Explicar a causa, a missão e o público da ONG.
-2. Navegar pelas quatro páginas.
-3. Demonstrar a interação de mostrar e ocultar orientações.
-4. Testar o formulário com erro e com dados válidos.
-5. Mostrar a adaptação para celular e computador.
-6. Explicar as funções de HTML, CSS e JS, justificando semântica, acessibilidade e pelo menos uma função, condição, evento e alteração do DOM.
-7. Apresentar a contribuição de cada integrante.
