@@ -1,4 +1,4 @@
-# Site institucional - Beija-Flores Solidário
+# Site institucional - Beija-Flores Solidários
 
 ## 1. ONG escolhida
 
