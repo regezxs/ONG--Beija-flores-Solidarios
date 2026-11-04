@@ -1,3 +1,12 @@
+// Evita que o navegador restaure a posição de rolagem após atualizar a página.
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
 // FUNCIONALIDADE 1: mostrar ou ocultar as orientações de participação.
 const botaoAjuda = document.getElementById('botao-ajuda');
 const orientacoes = document.getElementById('orientacoes');
