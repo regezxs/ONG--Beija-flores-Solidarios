@@ -71,3 +71,21 @@ function validarFormulario(evento) {
 if (formulario) {
   formulario.addEventListener('submit', validarFormulario);
 }
+
+// Anima os blocos da página Sobre quando entram na tela.
+const elementosRevelar = document.querySelectorAll('.revelar');
+
+if (elementosRevelar.length && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('tem-js');
+
+  const observadorRevelar = new IntersectionObserver((itens, observador) => {
+    itens.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add('visivel');
+        observador.unobserve(item.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  elementosRevelar.forEach((elemento) => observadorRevelar.observe(elemento));
+}

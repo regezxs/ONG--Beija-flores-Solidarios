@@ -290,6 +290,14 @@ textarea { min-height: 145px; resize: vertical; }
 .rodape-simples .container { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 .rodape-logo { width: 64px; height: 64px; }
 
+/* Animação dos blocos quando entram na área visível da página. */
+.tem-js .revelar { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.tem-js .revelar.visivel { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .tem-js .revelar { opacity: 1; transform: none; transition: none; }
+}
+
 /* Ilustrações conceituais: manter a composição inteira visível. */
 .caminhos img.imagem-institucional, .pilar > img.imagem-institucional {
   aspect-ratio: 4 / 3;
